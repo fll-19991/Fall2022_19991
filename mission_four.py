@@ -13,3 +13,6 @@ def mission_four(r):
     r.ev3.screen.draw_text(30, 60, "Mission 4")
     wait(1000)
     r.ev3.screen.clear()
+    r.robot.straight(190)
+    r.robot.turn(15)
+    r.robot.straight(300)
