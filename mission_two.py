@@ -13,3 +13,6 @@ def mission_two(r):
     r.ev3.screen.draw_text(30, 60, "Mission 2")
     wait(1000)
     r.ev3.screen.clear()
+
+    #here we go
+    
