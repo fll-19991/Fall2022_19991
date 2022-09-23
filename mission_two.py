@@ -14,5 +14,9 @@ def mission_two(r):
     wait(1000)
     r.ev3.screen.clear()
 
-    #here we go
-    
+    r.robot.settings(straight_speed=1000, straight_acceleration=100, turn_rate=100, turn_acceleration=100)
+   
+    r.robot.straight(-200)
+    r.robot.turn(70)
+    r.robot.straight(-800)
+    r.robot.left_attachment_motor.run(-100)
