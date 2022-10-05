@@ -16,8 +16,9 @@ def mission_two(r):
 
     r.robot.settings(straight_speed=1000, straight_acceleration=100, turn_rate=100, turn_acceleration=100)
    
-    r.robot.straight(-200)
-    r.robot.turn(70)
-    r.robot.straight(-800)
-    r.left_attachment_motor.run_angle(-200,100)
+    r.robot.straight(150)
+    r.robot.turn(-70)
+    r.robot.straight(800)
+    r.left_attachment_motor.run_angle(400,40)
     r.left_attachment_motor.stop
+    r.robot.straight(-200)
