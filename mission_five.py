@@ -16,6 +16,10 @@ def mission_five(r):
     r.robot.straight(10)
     r.robot.turn(15)
     
+    r.robot.straight(190)
+    r.robot.turn(15)
+    r.robot.straight(300)
+    
 
  
 
