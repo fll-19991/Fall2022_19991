@@ -25,8 +25,8 @@ class robot_19991:
         try:
             self.ev3 = EV3Brick()
             self.left_attachment_motor = Motor(Port.A)
-            self.left_drive_motor = Motor(Port.B,positive_direction=Direction.COUNTERCLOCKWISE)
-            self.right_drive_motor = Motor(Port.C,positive_direction=Direction.COUNTERCLOCKWISE)
+            self.left_drive_motor = Motor(Port.B)
+            self.right_drive_motor = Motor(Port.C)
             self.right_attachment_motor = Motor(Port.D)
             self.robot = DriveBase(self.left_drive_motor, self.right_drive_motor, wheel_diameter=88, axle_track=111)
             self.robot.settings(straight_speed=600, straight_acceleration=200, turn_rate=200, turn_acceleration=100)
