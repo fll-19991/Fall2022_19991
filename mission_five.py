@@ -12,14 +12,22 @@ def mission_five(r):
     print("Running Mission 5")
     r.ev3.screen.draw_text(30, 60, "Mission 5")
     wait(1000)
-    r.ev3.screen.clear()
-    r.robot.straight(10)
-    r.robot.turn(15)
-    
-    r.robot.straight(190)
-    r.robot.turn(15)
-    r.robot.straight(300)
-    
-
- 
-
+    #  r.ev3.screen.clear()
+    # r.robot.straight(10)
+    # r.robot.turn(15)  
+     # r.robot.straight(190)
+   # r.robot.turn(15)
+   # r.robot.straight(300)
+    #r.robot.straight(-100)
+    r.robot.turn(-115)
+    #r.left_attachment_motor.run_angle(200,185)
+    r.robot.straight(-50)
+    r.robot.turn(70)
+    r.robot.straight(-400)
+    r.robot.turn(100)
+    r.robot.straight(-350)
+    r.robot.straight(350)
+    r.robot.turn(-90)
+    r.robot.straight(600)
+    r.robot.turn(-90)
+    r.robot.straight(750)

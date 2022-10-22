@@ -16,4 +16,6 @@ def mission_three(r):
     r.robot.straight(900)
     r.robot.turn(-90)
     r.robot.straight(900)
+    r.robot.turn(90)
+    r.robot.straight(40)
     r.left_attachment_motor.run_angle(-200,100) 
