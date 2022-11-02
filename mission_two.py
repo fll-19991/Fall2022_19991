@@ -13,21 +13,28 @@ def mission_two(r):
     r.ev3.screen.draw_text(30, 60, "Mission 2")
     wait(1000)
     r.ev3.screen.clear()
-    r.robot.settings(straight_speed=1000, straight_acceleration=100, turn_rate=100, turn_acceleration=100)
+    r.robot.settings(straight_speed=2000, straight_acceleration=250, turn_rate=100, turn_acceleration=100)
+   #oLD SPEED 1000, 100, 100, 100
    #head out just a bit
-    r.robot.straight(-200)
-    #turn to toy factory
-    r.robot.turn(65)
-    #Got to toy factory
-    r.robot.straight(-610)
-    #Dump in toy factory
-    r.left_attachment_motor.run_angle(70,100)
-    r.left_attachment_motor.stop
-    #Back Up
     r.robot.straight(200)
+    #turn to toy factory
+    r.robot.turn(-65)
+    #Go to toy factory
+    r.robot.straight(600)
+    #Dump in toy factory
+    r.left_attachment_motor.run_angle(-70,-100)
+    r.left_attachment_motor.stop
     #arm OUT OF MY WAY
-    r.left_attachment_motor.run_angle(-70,100)
+    r.left_attachment_motor.run_angle(-35,100)
+    #Back Up
+    r.robot.straight(-200)
     #to the next one
-    r.robot.turn(60)
-    r.robot.straight(-395)
-    r.robot.turn(45)
+    r.robot.turn(-60)
+    #to the other home 
+    r.robot.straight(2600)
+    r.ev3.speaker.beep(frequency=2000, duration=1000)
+#YAY WE FINISHED!!!!!!!
+#MISSION 2 DA BEST
+#BETTER THAN YOURS Lillllllllllly
+#HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA
+#LOVE Me

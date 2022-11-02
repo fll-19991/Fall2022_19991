@@ -15,14 +15,15 @@ def mission_four(r):
     r.ev3.screen.draw_text(30, 60, "Mission 4")
     wait(1000)
     r.ev3.screen.clear()
-    r.robot. straight(880)
+    r.left_attachment_motor.run_angle(-200,-100)
+    r.robot. straight(895)
     r.left_attachment_motor.run_angle(-200,50)
     r.left_attachment_motor.run_angle(-200,-50)
     r.left_attachment_motor.run_angle(-200,50)
     r.left_attachment_motor.run_angle(-200,-50)
-    r.left_attachment_motor.run_angle(-200,50)
     r.left_attachment_motor.run_angle(-200,-50)
-    r.robot. straight(-200)
+    r.robot. straight(-800)
+    #my collectors anxiety is cured
 
   
 
