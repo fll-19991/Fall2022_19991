@@ -26,8 +26,8 @@ def mission_two(r):
     #arm OUT OF MY WAY
     r.left_attachment_motor.run_angle(-35,100)
     #Back Up
-    r.robot.straight(-200)
+    r.robot.straight(-220)
     #to the next one
-    r.robot.turn(-60)
+    r.robot.turn(-70)
     #to the other home 
-    r.robot.straight(2600)
+    r.robot.straight(2700)
