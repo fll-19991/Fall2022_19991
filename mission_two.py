@@ -20,24 +20,26 @@ def mission_two(r):
     #turn to toy factory
     r.robot.turn(-60)
     #Go to toy factory
-    r.robot.straight(600)
+    r.robot.straight(590)
     #Dump in toy factory
     r.left_attachment_motor.run_angle(-60,-100)
     r.left_attachment_motor.stop
-    #arm OUT OF MY WAYs
+    #arm OUT OF MY WAY
     r.left_attachment_motor.run_angle(-35,100)
+    
+    #Attempt at misson on side of bord
+    #
     #Back Up
-    r.robot.straight(-400)
+    #r.robot.straight(-400)
     #To the next one
-    r.robot.turn(-83)
+    #r.robot.turn(-83)
 
     #Back Up
-    #r.robot.straight(-220)
+    r.robot.straight(-220)
     #to the next HOME
-    #r.robot.turn(-73)
+    r.robot.turn(-73)
     #to the other home 
-    #r.robot.straight(2700)
-    #r.robot.drive(800,0)
-    #wait(5000)
-    #r.robot.stop()
-    #THIS IS DA CODE DAT WORKSSSSSSSSSSSSSSSSSSSS 21 SECSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
+    r.robot.drive(800,0)
+    wait(5000)
+    r.robot.stop()
+    #THIS IS DA CODE DAT WORKSSSSSSSSSSSSSSSSSSSS 21 SECONDSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS

@@ -5,7 +5,6 @@ from pybricks.parameters import *
 from pybricks.robotics import *
 from pybricks.iodevices import *
 from pybricks.tools import wait
-from pybricks.hubs import EV3Brick
 from robot_19991 import robot_19991
 ##
 def mission_five(r):
@@ -39,3 +38,6 @@ def mission_five(r):
     r.robot.turn(115)
     r.robot.straight(-540)
     #r.robot.straight(350)
+    robot.straight(400)
+    robot.turn(-45)
+    robot.straight(800)
