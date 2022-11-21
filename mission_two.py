@@ -26,7 +26,7 @@ def mission_two(r):
     r.left_attachment_motor.stop
     #arm OUT OF MY WAY
     r.left_attachment_motor.run_angle(-35,100)
-    
+    r.left_attachment_motor.stop()
     #Attempt at misson on side of bord
     #
     #Back Up
@@ -42,4 +42,5 @@ def mission_two(r):
     r.robot.drive(800,0)
     wait(5000)
     r.robot.stop()
+
     #THIS IS DA CODE DAT WORKSSSSSSSSSSSSSSSSSSSS 21 SECONDSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS

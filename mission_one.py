@@ -14,7 +14,7 @@ def mission_one(r):
     #wait(1000)
     r.ev3.screen.clear()
     r.robot.settings(straight_speed=1000, straight_acceleration=500, turn_rate=100, turn_acceleration=100)
-    r.robot.straight(630)
+    r.robot.straight(650)
     r.robot.straight(-240)
     #Start of new mission
     r.robot.stop()
@@ -35,7 +35,7 @@ def mission_one(r):
     #wait(1000)
     #r.robot.straight(-255)
     r.robot.turn(-90)
-    r.robot.straight(-1090)
+    r.robot.straight(-1100)
     #End of Code
     #VICTORY!!!!!
    
