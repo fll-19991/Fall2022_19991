@@ -13,7 +13,7 @@ def mission_two(r):
     r.ev3.screen.draw_text(30, 60, "Mission 2")
     wait(1000)
     r.ev3.screen.clear()
-
+    r.robot.stop()
     r.robot.settings(straight_speed=2000, straight_acceleration=250, turn_rate=100, turn_acceleration=100)
     #head out just a bit
     r.robot.straight(200)

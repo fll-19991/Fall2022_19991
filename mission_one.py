@@ -13,6 +13,7 @@ def mission_one(r):
     r.ev3.screen.draw_text(30, 60, "Mission 1")
     #wait(1000)
     r.ev3.screen.clear()
+    r.robot.stop()
     r.robot.settings(straight_speed=1000, straight_acceleration=500, turn_rate=100, turn_acceleration=100)
     r.robot.straight(650)
     r.robot.straight(-240)
