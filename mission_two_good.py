@@ -40,6 +40,8 @@ def mission_two(r):
     #Up with the bar
     r.left_attachment_motor.stop()
     r.left_attachment_motor.run_angle(-45,-100)
+
+    #This is the ambitious code does not work
     
 
 
