@@ -23,7 +23,7 @@ def mission_four(r):
     r.left_attachment_motor.run_angle(-200,-50)
     r.left_attachment_motor.run_angle(-200,50)
     r.left_attachment_motor.run_angle(-200,-50)
-    r.robot. straight(-800)
+    r.robot. straight(-900)
     #my collectors anxiety is cured
 
   

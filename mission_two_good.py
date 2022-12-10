@@ -1,4 +1,5 @@
-import math
+
+ import math
 import time
 from pybricks.ev3devices import *
 from pybricks.parameters import *
@@ -9,7 +10,7 @@ from pybricks.hubs import EV3Brick
 from robot_19991 import robot_19991
 
 def mission_two(r):
-    print("Running Mission 2")
+    print("Running Mission 2 Ambitious Version")
     r.ev3.screen.draw_text(30, 60, "Mission 2")
     wait(1000)
     r.ev3.screen.clear()
@@ -27,21 +28,22 @@ def mission_two(r):
     #arm OUT OF MY WAY
     r.left_attachment_motor.run_angle(-35,100)
     r.left_attachment_motor.stop()
-    #Attempt at misson on side of bord
-    #
-    #Back Up
-    #r.robot.straight(-400)
-    #To the next one
-    #r.robot.turn(-83)
-
     #Back Up
     r.robot.straight(-220)
-    #to the next HOME
-    r.robot.turn(-73)
-    #to the other home 
-    r.robot.drive(800,0)
-    wait(5000)
-    r.robot.stop()
+    #Turn towards the other mission
+    r.robot.turn(-90)
+    #Arm down
+    r.left_attachment_motor.run_time(200,330)
+    r.left_attachment_motor.hold()
+    #To the other one
+    r.robot.straight(840)
+    #Up with the bar
+    r.left_attachment_motor.stop()
+    r.left_attachment_motor.run_angle(-45,-100)
+    
+
+
+    
+   
 
    
- #THIS IS DA CODE DAT WORKSSSSSSSSSSSSSSSSSSSS 21 SECONDSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
